@@ -1,111 +1,504 @@
-{
-  "projectInfo": {
-    "topic": "취업",
-    "target": "효율적인 스펙 쌓기와 실무 중심의 면접 준비를 원하는 20대 후반 IT 직무 취업준비생",
-    "goal": "무료 이력서 진단 서비스 참여율 20% 달성 및 프리미엄 취업 컨설팅 결제 전환",
-    "language": "Korean (한국어)",
-    "selectedStyle": "[Landing Type] (섹션 스크롤/일반 웹사이트)",
-    "structureStrategy": "Main: 핵심 섹션 / Sub 1: 상세 정보, Sub 2: 기능/서비스, Sub 3: 소개/안내, Sub 4: 문의/지원 (주제에 맞춰 4개 필수 구성)",
-    "designIntent": "신뢰감과 전문성을 주는 블루 톤을 메인으로 사용하여 IT 직무 취준생에게 확신을 줍니다. 시선을 사로잡는 깔끔하고 모던한 랜딩 페이지 스타일로 구성하며, 스크롤을 내리며 자연스럽게 무료 이력서 진단 신청으로 이어지도록 Hero, Features, Proof, CTA 흐름을 엄격히 따릅니다."
-  },
-  "structure": {
-    "mainPage": {
-      "sections": [
-        "Header",
-        "Hero",
-        "PainPoints",
-        "Features",
-        "Testimonials",
-        "CTA",
-        "Footer"
-      ],
-      "description": "IT 취준생의 취업 고민을 공감하고 해결책을 제시하여 무료 이력서 진단으로 유도하는 긴 호흡의 랜딩 페이지"
-    },
-    "subPages": [
-      {
-        "id": "sub1",
-        "title": "프리미엄 컨설팅 상세 정보",
-        "path": "/consulting",
-        "purpose": "프리미엄 취업 컨설팅의 커리큘럼, 혜택, 가격 정보를 제공하여 결제 전환 유도",
-        "contentSpecs": "커리큘럼 타임라인, 제공 혜택 리스트, 결제 플랜 카드"
-      },
-      {
-        "id": "sub2",
-        "title": "무료 이력서 진단 서비스",
-        "path": "/resume-check",
-        "purpose": "사용자가 이력서를 업로드하고 무료 진단을 신청할 수 있는 기능 제공",
-        "contentSpecs": "파일 업로드 폼, 진단 항목 안내, 신청 완료 프로세스"
-      },
-      {
-        "id": "sub3",
-        "title": "멘토 소개 및 안내",
-        "path": "/mentors",
-        "purpose": "네카라쿠배 등 탑티어 IT 기업 출신 멘토진을 소개하여 서비스 신뢰도 상승",
-        "contentSpecs": "멘토 프로필 카드(사진, 경력, 전문 분야), 멘토링 철학"
-      },
-      {
-        "id": "sub4",
-        "title": "고객센터 및 지원",
-        "path": "/support",
-        "purpose": "서비스 이용 관련 자주 묻는 질문(FAQ) 및 1:1 문의 접수",
-        "contentSpecs": "FAQ 아코디언 메뉴, 1:1 이메일 문의 폼"
-      }
-    ]
-  },
-  "contentStrategy": {
-    "headline": "합격하는 IT 이력서, 실무진의 시선으로 완성하다",
-    "cta": "무료 이력서 진단 받기",
-    "keyMessages": [
-      "개발자, 기획자, 디자이너 맞춤형 포트폴리오 피드백",
-      "상위 1% IT 기업 합격자들의 데이터 기반 면접 컨설팅",
-      "서류 탈락의 원인을 정확히 짚어내는 1:1 밀착 코칭"
-    ]
-  },
-  "designSystem": {
-    "colorPalette": {
-      "primary": "#0052FF",
-      "secondary": "#00C48C",
-      "background": "#F8F9FA"
-    },
-    "typography": "Pretendard, sans-serif",
-    "moodboard": "전문적, 모던, 신뢰감, 혁신적, 깔끔한 여백, IT 친화적"
-  },
-  "developmentGuide": {
-    "stack": "Vite + React + TypeScript",
-    "folderStructure": "src/components (공통 UI 요소), src/pages (Main, Sub1~4 페이지), src/assets (이미지/폰트), src/styles (글로벌 스타일), src/utils (유틸리티)",
-    "vercelDeploymentConfig": {
-      "instruction": "Vercel 배포가 가능한 Vite + React + TypeScript 프로젝트 구조로 변환",
-      "indexHtmlSetup": "index.html 내 <script type='module' src='/src/main.tsx'></script> 포함하게"
-    },
-    "imageConfiguration": {
-      "storagePath": "src/assets/images",
-      "manifestFile": "src/assets/images/images.txt (사용된 이미지 파일명 목록 명시)"
-    }
-  },
-  "imageAssets": [
-    {
-      "name": "HERO_BG",
-      "url": "https://loremflickr.com/1600/900/coding,office",
-      "description": "메인 히어로 섹션 배경 이미지, IT 오피스와 코딩 환경을 보여주어 타겟의 공감을 유도",
-      "prompt": "modern IT office, coding on laptop, professional workspace"
-    },
-    {
-      "name": "FEATURE_RESUME",
-      "url": "https://loremflickr.com/1600/900/resume,laptop",
-      "description": "이력서 진단 기능을 설명하는 섹션에 들어갈 이미지",
-      "prompt": "reviewing resume on laptop screen, professional"
-    },
-    {
-      "name": "FEATURE_INTERVIEW",
-      "url": "https://loremflickr.com/1600/900/interview,meeting",
-      "description": "면접 컨설팅 기능을 설명하는 섹션에 들어갈 이미지",
-      "prompt": "1 on 1 interview coaching, professional meeting"
-    },
-    {
-      "name": "TESTIMONIAL_BG",
-      "url": "https://loremflickr.com/1600/900/success,team",
-      "description": "합격 후기 및 증명 섹션의 배경 이미지",
-      "prompt": "happy team, success celebration in modern office"
-    }
-  ]
-}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김종욱 | 하이테크 전문 헤드헌터</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans KR"', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1A365D',
+                        secondary: '#718096',
+                        background: '#F7FAFC'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Noto Sans KR', sans-serif; }
+        .bg-hero {
+            background-image: linear-gradient(rgba(26, 54, 93, 0.8), rgba(26, 54, 93, 0.8)), url('https://loremflickr.com/1600/900/business,city');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-background text-gray-800 antialiased">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center cursor-pointer" onclick="navigateTo('main-page')">
+                    <i class="fa-solid fa-user-tie text-primary text-2xl mr-3"></i>
+                    <span class="font-bold text-xl text-primary tracking-tight">KIM JONG-WOOK <span class="text-sm font-normal text-gray-500 hidden sm:inline-block ml-2">| Executive Search</span></span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <button onclick="navigateTo('sub1')" class="text-gray-600 hover:text-primary font-medium transition">상세 정보</button>
+                    <button onclick="navigateTo('sub2')" class="text-gray-600 hover:text-primary font-medium transition">제공 서비스</button>
+                    <button onclick="navigateTo('sub3')" class="text-gray-600 hover:text-primary font-medium transition">인사이트</button>
+                    <button onclick="navigateTo('sub4')" class="bg-primary text-white px-6 py-2.5 rounded-md font-medium hover:bg-blue-900 transition shadow-lg">상담 신청</button>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="flex items-center md:hidden">
+                    <button class="text-gray-600 hover:text-primary focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Page -->
+    <div id="main-page" class="pt-20">
+        <!-- Hero Section -->
+        <header class="bg-hero text-white py-32 lg:py-48">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <span class="text-blue-300 font-semibold tracking-wider uppercase text-sm mb-4 block">15년 경력 하이테크 전문 헤드헌터</span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                    당신의 가치를 증명할 다음 무대,<br class="hidden md:block" /> 전문가가 함께 설계합니다.
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-3xl mx-auto font-light">
+                    AI, 반도체 등 하이테크 산업에 특화된 날카로운 인사이트로 상위 1% 핵심 인재를 위한 맞춤형 커리어 로드맵을 제공합니다.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <button onclick="navigateTo('sub4')" class="bg-white text-primary px-8 py-4 rounded-md font-bold text-lg hover:bg-gray-100 transition shadow-xl">
+                        프리미엄 커리어 상담 신청
+                    </button>
+                    <button onclick="navigateTo('sub1')" class="border border-white text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-white/10 transition">
+                        전문가 이력 보기
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- About Me Section -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col lg:flex-row items-center gap-16">
+                    <div class="lg:w-1/2">
+                        <img src="https://loremflickr.com/800/800/portrait,professional" alt="김종욱 헤드헌터" class="rounded-2xl shadow-2xl object-cover w-full max-w-md mx-auto aspect-square">
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h2 class="text-3xl font-bold text-primary mb-6">"이직은 단순한 직장 이동이 아닌, 커리어의 퀀텀 점프입니다."</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed text-lg">
+                            안녕하세요. 15년 차 하이테크 전문 헤드헌터 김종욱입니다. <br><br>
+                            빠르게 변화하는 IT, AI, 반도체 산업에서 기업이 원하는 인재상과 개인이 원하는 커리어 패스는 끊임없이 진화하고 있습니다. 저는 단순한 매칭을 넘어, 후보자의 잠재력을 극대화하고 시장 가치를 정확히 평가받을 수 있도록 돕는 '커리어 파트너'입니다.
+                        </p>
+                        <ul class="space-y-4 text-gray-700 font-medium">
+                            <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-3"></i> 누적 이직 성공 사례 500+ 건</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-3"></i> 평균 연봉 인상률 22% 달성</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-3"></i> 국내외 Top-tier 테크 기업 파트너십</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Expertise Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-primary mb-4">핵심 전문 분야</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">하이테크 산업 전반에 걸친 깊은 이해도를 바탕으로 최적의 포지션을 제안합니다.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100">
+                        <div class="w-14 h-14 bg-blue-50 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-microchip text-2xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">AI & Data Science</h3>
+                        <p class="text-gray-600">머신러닝 엔지니어, 데이터 사이언티스트, AI 리서처 등 최전선 기술 인재 발굴</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100">
+                        <div class="w-14 h-14 bg-blue-50 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-server text-2xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Cloud & Infrastructure</h3>
+                        <p class="text-gray-600">클라우드 아키텍트, DevOps 엔지니어, 대규모 트래픽 처리 인프라 전문가 매칭</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100">
+                        <div class="w-14 h-14 bg-blue-50 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-memory text-2xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Semiconductor & Hardware</h3>
+                        <p class="text-gray-600">반도체 설계, 공정 엔지니어, 임베디드 시스템 등 딥테크 분야 핵심 인력 채용</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories (Proof) -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                    <div>
+                        <h2 class="text-3xl font-bold text-primary mb-4">증명된 성공 사례</h2>
+                        <p class="text-gray-600">숫자와 결과로 말하는 15년의 노하우</p>
+                    </div>
+                    <img src="https://loremflickr.com/400/200/handshake,success" alt="Success" class="hidden md:block rounded-lg shadow-md w-48 h-24 object-cover">
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="border-l-4 border-primary bg-gray-50 p-6 rounded-r-lg">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-bold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">AI 개발 리더</span>
+                            <span class="text-sm text-gray-500">2023. 10</span>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2">중견기업 AI 엔지니어 → 유니콘 스타트업 AI 리더</h4>
+                        <p class="text-gray-700">연봉 35% 인상 및 스톡옵션 확보. 후보자의 논문 실적과 프로젝트 리딩 경험을 적극 어필하여 파격적인 조건으로 협상 타결.</p>
+                    </div>
+                    <div class="border-l-4 border-primary bg-gray-50 p-6 rounded-r-lg">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-bold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">반도체 설계</span>
+                            <span class="text-sm text-gray-500">2023. 08</span>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2">국내 대기업 책임연구원 → 글로벌 팹리스 수석</h4>
+                        <p class="text-gray-700">글로벌 기업으로의 커리어 전환 희망. 영문 이력서 컨설팅 및 4차례의 강도 높은 면접 코칭을 통해 최종 합격 유도.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-24 bg-primary text-white text-center">
+            <div class="max-w-4xl mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">준비된 인재에게는 더 넓은 무대가 필요합니다</h2>
+                <p class="text-lg text-blue-200 mb-10">철저한 비밀 보장 원칙 아래, 당신의 커리어 도약을 위한 심도 있는 상담을 진행합니다. <br class="hidden md:block">지금 바로 프리미엄 상담을 신청하세요.</p>
+                <button onclick="navigateTo('sub4')" class="bg-white text-primary px-10 py-4 rounded-md font-bold text-xl hover:bg-gray-100 transition shadow-2xl transform hover:-translate-y-1">
+                    1:1 무료 커리어 상담 신청
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Sub Page 1: 상세 정보 -->
+    <div id="sub1" class="hidden pt-20 min-h-screen flex flex-col">
+        <div class="bg-gray-100 py-12">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-3xl font-bold text-primary mb-4">상세 정보 및 이력</h1>
+                <p class="text-gray-600">15년간 하이테크 산업과 함께 성장해 온 헤드헌터 김종욱의 발자취입니다.</p>
+            </div>
+        </div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex-grow w-full">
+            <button onclick="navigateTo('main-page')" class="mb-8 text-primary hover:text-blue-800 font-medium flex items-center">
+                <i class="fa-solid fa-arrow-left mr-2"></i> 메인으로 돌아가기
+            </button>
+            
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-200 mb-10">
+                <h2 class="text-2xl font-bold mb-6 border-b pb-4">Career Timeline</h2>
+                <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
+                    
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-primary text-slate-100 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                            <i class="fa-solid fa-star text-sm"></i>
+                        </div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-gray-50 p-4 rounded border border-slate-200 shadow-sm">
+                            <div class="flex items-center justify-between space-x-2 mb-1">
+                                <div class="font-bold text-slate-900">Top-tier 전문 헤드헌팅 펌 파트너</div>
+                                <time class="font-caveat font-medium text-primary">2018 - 현재</time>
+                            </div>
+                            <div class="text-slate-500 text-sm">AI, 클라우드, 반도체 C-level 및 핵심 기술 인재 전담. 연간 평균 40건 이상의 성공적 매칭.</div>
+                        </div>
+                    </div>
+
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 text-slate-600 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                            <i class="fa-solid fa-briefcase text-sm"></i>
+                        </div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow-sm">
+                            <div class="flex items-center justify-between space-x-2 mb-1">
+                                <div class="font-bold text-slate-900">글로벌 IT 기업 HR 책임자</div>
+                                <time class="font-caveat font-medium text-slate-500">2013 - 2018</time>
+                            </div>
+                            <div class="text-slate-500 text-sm">사내 채용 시스템 고도화 및 아시아 태평양 지역 핵심 엔지니어 소싱 총괄.</div>
+                        </div>
+                    </div>
+
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 text-slate-600 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                            <i class="fa-solid fa-graduation-cap text-sm"></i>
+                        </div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow-sm">
+                            <div class="flex items-center justify-between space-x-2 mb-1">
+                                <div class="font-bold text-slate-900">국내 대기업 IT 기획팀</div>
+                                <time class="font-caveat font-medium text-slate-500">2008 - 2013</time>
+                            </div>
+                            <div class="text-slate-500 text-sm">IT 인프라 기획 및 기술 트렌드 분석. 하이테크 산업에 대한 깊은 이해의 기반 마련.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+                <h2 class="text-2xl font-bold mb-6 border-b pb-4">주요 파트너십 네트워크</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div class="p-4 bg-gray-50 rounded font-semibold text-gray-700">글로벌 빅테크 기업</div>
+                    <div class="p-4 bg-gray-50 rounded font-semibold text-gray-700">국내 Top IT 포털</div>
+                    <div class="p-4 bg-gray-50 rounded font-semibold text-gray-700">AI 유니콘 스타트업</div>
+                    <div class="p-4 bg-gray-50 rounded font-semibold text-gray-700">반도체 팹리스/파운드리</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sub Page 2: 기능/서비스 -->
+    <div id="sub2" class="hidden pt-20 min-h-screen flex flex-col">
+        <div class="bg-primary py-12 text-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-3xl font-bold mb-4">제공 서비스 및 프로세스</h1>
+                <p class="text-blue-200">단순한 이력서 전달이 아닌, 커리어 컨설팅 기반의 프리미엄 헤드헌팅을 제공합니다.</p>
+            </div>
+        </div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex-grow w-full">
+            <button onclick="navigateTo('main-page')" class="mb-8 text-primary hover:text-blue-800 font-medium flex items-center">
+                <i class="fa-solid fa-arrow-left mr-2"></i> 메인으로 돌아가기
+            </button>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-2xl font-bold mb-6 text-gray-800">프리미엄 서비스 영역</h2>
+                    <ul class="space-y-6">
+                        <li class="flex">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-file-contract text-primary text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold text-gray-900">이력서 및 포트폴리오 컨설팅</h4>
+                                <p class="mt-1 text-gray-600">기술 스택과 프로젝트 성과가 돋보이도록 JD(Job Description)에 맞춘 서류 최적화 작업을 지원합니다.</p>
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-comments text-primary text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold text-gray-900">실전 대비 면접 코칭</h4>
+                                <p class="mt-1 text-gray-600">기술 면접, 임원 면접 등 단계별 예상 질문 도출 및 모의 면접을 통해 합격률을 극대화합니다.</p>
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-hand-holding-dollar text-primary text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold text-gray-900">연봉 및 처우 협상 대행</h4>
+                                <p class="mt-1 text-gray-600">시장 가치 분석을 바탕으로 후보자에게 가장 유리한 조건(연봉, 사이닝 보너스, 스톡옵션)을 이끌어냅니다.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-200">
+                    <h2 class="text-2xl font-bold mb-6 text-gray-800">진행 프로세스</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg z-10">1</div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-gray-900">초기 커리어 상담</h4>
+                                <p class="text-sm text-gray-500">현재 상황 진단 및 이직 목표 설정</p>
+                            </div>
+                        </div>
+                        <div class="w-0.5 h-8 bg-gray-300 ml-5 -my-4"></div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg z-10">2</div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-gray-900">포지션 매칭 및 제안</h4>
+                                <p class="text-sm text-gray-500">Hidden Job 위주의 적합 포지션 선별</p>
+                            </div>
+                        </div>
+                        <div class="w-0.5 h-8 bg-gray-300 ml-5 -my-4"></div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg z-10">3</div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-gray-900">전형 진행 및 코칭</h4>
+                                <p class="text-sm text-gray-500">서류 접수부터 최종 면접까지 밀착 관리</p>
+                            </div>
+                        </div>
+                        <div class="w-0.5 h-8 bg-gray-300 ml-5 -my-4"></div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg z-10">4</div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-gray-900">최종 협상 및 입사 지원</h4>
+                                <p class="text-sm text-gray-500">처우 협상 및 성공적인 온보딩 지원</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sub Page 3: 소개/안내 (Insights) -->
+    <div id="sub3" class="hidden pt-20 min-h-screen flex flex-col">
+        <div class="bg-gray-900 py-12 text-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-3xl font-bold mb-4">인사이트 & FAQ</h1>
+                <p class="text-gray-400">하이테크 채용 트렌드와 성공적인 이직을 위한 팁을 공유합니다.</p>
+            </div>
+        </div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex-grow w-full">
+            <button onclick="navigateTo('main-page')" class="mb-8 text-primary hover:text-blue-800 font-medium flex items-center">
+                <i class="fa-solid fa-arrow-left mr-2"></i> 메인으로 돌아가기
+            </button>
+
+            <!-- Articles -->
+            <h2 class="text-2xl font-bold mb-6 text-gray-800 border-b pb-2">최신 채용 트렌드</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                <div class="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden cursor-pointer hover:shadow-md transition">
+                    <img src="https://loremflickr.com/600/300/technology,ai" alt="AI Trend" class="w-full h-40 object-cover">
+                    <div class="p-5">
+                        <span class="text-xs font-semibold text-primary mb-2 block">AI & Data</span>
+                        <h3 class="font-bold text-lg mb-2">2024 생성형 AI 시대, 기업이 요구하는 엔지니어의 핵심 역량은?</h3>
+                        <p class="text-sm text-gray-600 line-clamp-2">단순 모델링을 넘어 프롬프트 엔지니어링과 LLM 파인튜닝 경험이 연봉을 결정짓는 핵심 요소로 떠오르고 있습니다.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden cursor-pointer hover:shadow-md transition">
+                    <img src="https://loremflickr.com/600/300/technology,semiconductor" alt="Semiconductor" class="w-full h-40 object-cover">
+                    <div class="p-5">
+                        <span class="text-xs font-semibold text-primary mb-2 block">Hardware</span>
+                        <h3 class="font-bold text-lg mb-2">반도체 슈퍼사이클 재진입, 팹리스 이직 최적의 타이밍</h3>
+                        <p class="text-sm text-gray-600 line-clamp-2">차세대 칩 설계를 위한 고급 인력 품귀 현상. 지금이 몸값을 높여 이직할 수 있는 가장 좋은 기회입니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <h2 class="text-2xl font-bold mb-6 text-gray-800 border-b pb-2">자주 묻는 질문 (FAQ)</h2>
+            <div class="space-y-4">
+                <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                    <h4 class="font-bold text-gray-900 mb-2 flex items-center"><i class="fa-solid fa-q text-primary mr-2"></i> 헤드헌터를 통한 이직 시 비용이 발생하나요?</h4>
+                    <p class="text-gray-600 text-sm pl-6">아닙니다. 후보자님께는 어떠한 수수료나 비용도 청구하지 않습니다. 헤드헌팅 수수료는 채용을 의뢰한 기업 측에서 부담합니다.</p>
+                </div>
+                <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                    <h4 class="font-bold text-gray-900 mb-2 flex items-center"><i class="fa-solid fa-q text-primary mr-2"></i> 현재 재직 중이라 보안이 매우 중요합니다.</h4>
+                    <p class="text-gray-600 text-sm pl-6">이직 진행 과정의 모든 내용은 철저한 기밀로 유지됩니다. 후보자님의 명시적인 동의 없이는 이력서가 외부로 절대 유출되지 않으며, 블라인드 프로필 형태로 기업에 사전 제안을 진행할 수도 있습니다.</p>
+                </div>
+                <div class="bg-gray-50 p-5 rounded-lg border border-gray-200">
+                    <h4 class="font-bold text-gray-900 mb-2 flex items-center"><i class="fa-solid fa-q text-primary mr-2"></i> 당장 이직할 생각은 없는데 상담이 가능한가요?</h4>
+                    <p class="text-gray-600 text-sm pl-6">물론입니다. 장기적인 관점에서의 커리어 패스 점검 및 시장 가치 파악을 위한 네트워킹 목적의 상담도 환영합니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sub Page 4: 문의/지원 -->
+    <div id="sub4" class="hidden pt-20 min-h-screen flex flex-col">
+        <div class="bg-blue-50 py-12">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-3xl font-bold text-primary mb-4">프리미엄 커리어 상담 신청</h1>
+                <p class="text-gray-600">성공적인 커리어 도약을 위한 첫걸음. 아래 양식을 작성해 주시면 24시간 내에 연락드리겠습니다.</p>
+            </div>
+        </div>
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex-grow w-full">
+            <button onclick="navigateTo('main-page')" class="mb-8 text-primary hover:text-blue-800 font-medium flex items-center">
+                <i class="fa-solid fa-arrow-left mr-2"></i> 메인으로 돌아가기
+            </button>
+
+            <div class="bg-white p-8 md:p-10 rounded-2xl shadow-xl border border-gray-100">
+                <form onsubmit="event.preventDefault(); alert('상담 신청이 완료되었습니다. 기재하신 연락처로 곧 안내 드리겠습니다.'); navigateTo('main-page');" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">이름 *</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition" placeholder="홍길동">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">연락처 *</label>
+                            <input type="tel" required class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition" placeholder="010-0000-0000">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">이메일 주소 *</label>
+                        <input type="email" required class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition" placeholder="example@email.com">
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">현재 소속 및 직무 *</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition" placeholder="A사 / 백엔드 개발자">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">경력 연차 *</label>
+                            <select class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition bg-white">
+                                <option>3년 미만</option>
+                                <option>3년 ~ 5년</option>
+                                <option>5년 ~ 10년</option>
+                                <option>10년 이상</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">관심 분야 및 희망 사항</label>
+                        <textarea rows="4" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition resize-none" placeholder="이직 희망 시기, 선호하는 기업 형태, 주요 성과 등을 자유롭게 적어주세요."></textarea>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">이력서 첨부 (선택)</label>
+                        <input type="file" class="w-full px-4 py-2 text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-primary hover:file:bg-blue-100 cursor-pointer border border-gray-300 rounded-md">
+                        <p class="text-xs text-gray-400 mt-2">* PDF, DOCX 형식만 지원됩니다. (최대 10MB)</p>
+                    </div>
+
+                    <div class="pt-4">
+                        <button type="submit" class="w-full bg-primary text-white font-bold py-4 rounded-md hover:bg-blue-900 transition shadow-lg text-lg">
+                            상담 신청서 제출하기
+                        </button>
+                        <p class="text-center text-xs text-gray-500 mt-4"><i class="fa-solid fa-lock mr-1"></i> 제출된 정보는 철저히 암호화되어 보호되며, 상담 목적 외에는 사용되지 않습니다.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-gray-900 text-gray-400 py-12 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0 text-center md:text-left">
+                <span class="text-white font-bold text-lg block mb-2">김종욱 | 하이테크 전문 헤드헌터</span>
+                <p>서울특별시 강남구 테헤란로 비즈니스센터 15F</p>
+                <p>Email: contact@jwkim-search.com | Tel: 02-000-0000</p>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-8 border-t border-gray-800 text-center">
+            <p>&copy; 2024 Kim Jong-wook Executive Search. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Navigation Script -->
+    <script>
+        function navigateTo(pageId) {
+            const pages = ['main-page', 'sub1', 'sub2', 'sub3', 'sub4'];
+            pages.forEach(id => {
+                document.getElementById(id).classList.add('hidden');
+            });
+
+            document.getElementById(pageId).classList.remove('hidden');
+
+            if(pageId === 'main-page') {
+                document.getElementById('footer').classList.remove('hidden');
+            } else {
+                document.getElementById('footer').classList.add('hidden');
+            }
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
